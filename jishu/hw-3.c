@@ -12,7 +12,7 @@ int main (void) {
     for (i = 0; i < size; i++) {
       double value = sin(M_PI / r * j);
       int index = value * r;
-      output[i][j] = 500 - index - 250 == i ? 0 : 255;
+      output[i][j] = size - index - r == i ? 0 : 255;
     }
 
   write_pgm(output, size, size);
