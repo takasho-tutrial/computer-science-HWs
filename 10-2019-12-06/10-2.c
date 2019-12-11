@@ -36,7 +36,6 @@ double ave_math (Student a[], int num, int score) {
       total += a[i].math;
     }
   }
-  printf("%d %d\n", total, successCount);
   return (double)total / successCount;
 }
 
@@ -51,7 +50,7 @@ int main () {
     // printf("番号%03d番%sの数学は%d点で，英語は%d点．\n", students[i].code, students[i].name, students[i].math, students[i].eng);
   
   Student bestEngPerson = max_eng(students, peopleCount);
-  printf("英語が最高点の学生は番号%03d番%sの数学は%d点で，英語は%d点．\n", bestEngPerson.code, bestEngPerson.name, bestEngPerson.math, bestEngPerson.eng);
+  printf("英語が最高点の学生は番号%03d番%sの数学は%d点で，英語は%d点です．\n", bestEngPerson.code, bestEngPerson.name, bestEngPerson.math, bestEngPerson.eng);
 
   printf("英語が%d点以上の学生の数学の平均点は%lf点です．\n", 50, ave_math(students, peopleCount, 50));
 }
